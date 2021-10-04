@@ -11,6 +11,8 @@ spring:
             - user-service
             - document-service
             - notification-service
+            - api-gateway
+            - registry-service
 server:
   port: 8888
 eureka:
