@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/vtsign/git-config-server
+          uri: git@github.com:vtsign/git-config-server.git
           search-paths:
             - auth-service
             - user-service
