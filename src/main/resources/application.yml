@@ -1,3 +1,10 @@
+server:
+  port: 8888
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://vtsign.tech:8761/eureka/
+
 spring:
   application:
     name: config-server
@@ -13,9 +20,56 @@ spring:
             - notification-service
             - api-gateway
             - registry-service
-server:
-  port: 8888
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://vtsign.tech:8761/eureka/
+          ignoreLocalSshSettings: true
+          privateKey: |
+            -----BEGIN RSA PRIVATE KEY-----
+            MIIJJwIBAAKCAgEAym4KRzKP95TQmIEv+FGTysBkJ98ohNQ07DKpBOukp8XnVFxq
+            +l3g141nJhJH+2rRemxqV6KKRR4q78MG9N+axAEQfDzRP7Q8+OjekmHBNet1D9z9
+            P//IQeHCAvaLmqlBrecSTWQtqlph7K0Gd2u7IUxollz0shSg2kRsWcY3fyV3pct9
+            yjO7T7+cIBQ0L5ZoPL4Eh891ALTQWm7rv/AE0VhkC4KZdMm/TW6jjo/Ljh82numH
+            LSb6tcmY+oDN22mdMyL0iVBN2JA50bCtelFfiNQkE5DH7oHbJb0bDcB+vJ7xIjPF
+            opgh8BEQ8M5NObMZ5GmbbQzIVuUqP6V7HvY7VJ5QFV27FfG1GzrbcvoR+HX2DsKl
+            8GN2RJ6itXwnuto3N5leunJRuzn0cCMGW+fvFK7PmkL2XAu55mXjTzMYJIUoP+Jt
+            el2lNLZ4iFWtOmZHd0GySjjjvohXf0Mka/gVLr/6iEKqrXST6BHXUw3ZVAK0TSZm
+            bBiBdayGTvLAuq2RBhzo7+HkVDYYUOx6t/1e7tIxXKR+37B+SAbklSQh/V3HF3WC
+            EkvhGflqMz4ymIl7RZoCm42IkAzP2y0Le+vjSFXexYRtv53X1LMktMztgby21zm2
+            JEKjjJugbZNaTq5u9Ku1lXKI68cf9ak/qaVdBTAD4Zl4crcRvfhy6rGXxV8CAwEA
+            AQKCAgBUl7WN2TBWewbMpDfiolyLfuibzOLG11MiXW1KVBrjzY0FMPW3mKGMElhH
+            jZ4tD49ohIPQCWmUxq2UskBm9kZboEI+WL/syiosrkvMijNOkA3ESko+g2oxNeF4
+            kYT3ZcG/pW99jd6TcN+5Ivkv0IJLwP130HKlNH+flrZcsbuhU4vzad0wMXwWMHFS
+            6n6AYG9A6vtDscsoN2dWU0ILXIb24OQ19yafqmtaNWD+A1NCGgMeV2KY2NAuRYe7
+            LzZXeYQqyXG9LCTL2kF/QkDMe9LbgCNvVbJnFjb5R1RV49pSgm0sKMxvTPnps4gL
+            yXp2IUUxsXw1DwFtZqjIHiQcZTOXQ4Y883nRaTCiInSFtGtxMNHdlh9dOOjWUc99
+            Ri5Y0/N/nIhseNH/LEY9zJrBUoe3vxA+d5yvc1NK8DwO7wtznk8pdWy1+DiQ1Jde
+            CGKZyXNU8nYUqjYgHqKxl1xD57R1a6NhdTEApWTc1q0HTE3JbzDSPaBGax807QdG
+            KsFeMhYh9KaR48xDzVcmPfkNuSZo84uCrWB14bx42cOxL35TM9D7feZO6r5SQ648
+            cCCuTjujnKasE9I/7ULgpV9rj7vuPKj5ajlGwkbuFM7Gh8QdPQ8TFdqLZDSFkteS
+            tb7qOLXarZkrM2VXzSXWK/tqXfN1WZ2w1wyZH4msqUQfQ4XusQKCAQEA7IvaIwpu
+            nz3pz99SFsDdxe8h24GMobqLkC5jPmH8phfFuzz5VOE4qV+4PipVKbPMOSi8L9zP
+            fX2hDOnP4fIVkx4FesFKwZJkBQvew8J35RTVioARqMlC25Er1AqY9dYX1XbioWPX
+            Sx28vqvL1AbEAYQYe96UGnQblyKnZIXEb7W+DWuM1vpZnlJWyGjj9GMrHMvEn4at
+            dQtfNt8EwtXvIQFwGCEAq92y9huHL7WTdDKp3sHOOgGz6w3ftd6Bq4Byw9N7xpTS
+            GwSq9xWTIn09nb/QjrEZuan5nHqGhvMdYEVqB/q1rfS5d+Mi3VDtyaCNMZmryqJg
+            938wfzCxZWocGQKCAQEA2xPqE7HGv5QcdcGjwOXflLaPpwAD7HNokYR5EurtYK3n
+            oJGicY2jC3f5XYVsJGF0pbK0r2qoHwyfzGNiXeeG2Ry6oOV7gxLCNlp5xOk8Clfb
+            7Kd+VtoakOIt6aEW5mMynwQu/tmoxrDvTxO6z8Y57HjLXMOS5rvQLXw6LiINHrxU
+            3l0fpMqE2JlFnImXXi9HEcYdMb4lVLFytGd1+L2TEsptbhgo+YEIYPlUC+XiqpxH
+            fTOnFL7043yMx4kZCAjkk7mD8lYjQQV3yedyva3UJUfrAAeBsKMcpQI8lZ5aPdTb
+            4kHARVhQiOV30a9kUy4hqz/yJNHcgPI0KKqjyaEcNwKCAQBS+5DwAAXkyWSP7yku
+            IETs3kJDbkQ2rGmvkAZy6Q8n+Wj9kZtqgoRNLu5EqLctpQy89KRoKg+EV6E7FX8/
+            JZ0Z+ksz0EF4fPGnr41boYpMDC4Jo3oOe2SAAIKepYUZoRzFXyqMMaliibEgNsaP
+            wDvcyEmKkv/j892F/Ls6kY7jHZ/pt1Q2SqdL2ljlf56QqoWCWZ3F1Qpe6Dlj14Ml
+            EsYMDyQS4ukIYgMZQXkAbLOo7OkY42aEhPpoOHrFo6Rb1Pjt5/AhLy4yGkYb3i66
+            x7Lo91Sj6k87Cf0uPvGYwAsLLe7Pk81OlG7INx+RAoYY2MEPqHhS4vofeTg7NorV
+            KA9pAoIBAFIbKpVrAWP3rJrtkePPw3XG3hvmw5GwxzYSghX2+jRLuQ3SxyDrxnmb
+            41eLk7Ym2ELpsRI1VQEeCB3f+ZPcHAvu2ntGxn2fYC5ixlRoXVo7B2+wboc6gs5e
+            FnsDJsP91ZEHTl2xUbH1yhrG+DK6xia8NutzWPEk3qbNcjisBmLIjr4wBJYMWLGc
+            8Bv07UgdS/N7XqGv8+nD/4thYzNwSVi3iT/DykeIdo1xpHA5HjR3Ecv4udvqnXlM
+            yq5V0Y3TV2eOFceTRO8vj2+aUMSKC4JVa9u89HwxBaFKL06b5JJb3nTz042pxbUo
+            2zk5FM6f8XpvIt9tz8h7/dRn7663tQ0CggEAbiMEA6aczhiS8/k5ixE6AZXidwN2
+            5lJoBNIpcH3smbZY9JYbTjwHMBUoAVbelD/94FJNAmCTkas+qP7PJLpW+zNpyb99
+            j0Y3iUPvsqEdm9jwcpxxEFxXx0K6fmzHNtFQ7pE5VpXHZBuUj2QusfjRwDfvC6jX
+            MJpLt72QdposCbcWP0dR4fwX+usWLbXsIH+ThWE9+TObB7m1OQoXgICSJE/0vdaF
+            cVeEWHHfVfTg0F8rQ/Ednyvrf7xa5i7kfl2HVshGzcGifneGObAw8u8G/qF7h/0V
+            SDvpKFBGNc/xiWv4vqp55XOFDSaJ7uY5KW5Rj3T2k+uMX72pwCfqfUGy5w==
+            -----END RSA PRIVATE KEY-----
