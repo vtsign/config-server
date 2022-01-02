@@ -1,9 +1,9 @@
 server:
-  port: 8888
+  port: ${PORT:8888}
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://vtsign.tech:8761/eureka/
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
 
 spring:
   application:

@@ -27,4 +27,6 @@ COPY --from=build /app/target/*.jar ./
 ENV GH_REPO=repo
 ENV GH_USERNAME=username
 ENV GH_PASSWORD=passwordortoken
+ENV PORT=8888
+ENV EUREKA_SERVER_URL=http://localhost:8761/eureka/
 CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/config-server.jar"]
