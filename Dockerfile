@@ -24,4 +24,7 @@ WORKDIR /app
 
 EXPOSE 8888
 COPY --from=build /app/target/*.jar ./
+ENV GH_REPO=repo
+ENV GH_USERNAME=username
+ENV GH_PASSWORD=passwordortoken
 CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/config-server.jar"]
